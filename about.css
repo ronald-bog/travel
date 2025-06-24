@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #0f2b2e, #1d3c3f);
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+.about-hero {
+    background-image: url('background.jpg');
+    /* reemplazar con imagen deseada */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    padding: 60px 40px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin-bottom: 60px;
+    margin-left: 100px;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Team Section */
+.team-section {
+    padding-left: 100px;
+    max-width: 1000px;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.member-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.member-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.member-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.member-card button {
+    background-color: #2f3b88;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+}
+
+.social-icons {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+}
